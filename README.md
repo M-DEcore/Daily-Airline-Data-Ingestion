@@ -19,7 +19,7 @@ Tech Stack:
 
 A daily file is uploaded to S3, based on partition. Event bridge will capture the pattern and trigger the step function, which orchestrates the process. The Redshift will already have the Dimension  table.
 
-When the data arrives in S3, a glue crawler is triggered. wait cralwer to complete to update the metadata and then trigger Glue Job. 
+When the data arrives in S3, a glue crawler is triggered. wait for the cralwer to complete the updataion the metadata and then trigger Glue Job. 
 
 Glue Job will have Job bookmarking enabled to read new 
 
