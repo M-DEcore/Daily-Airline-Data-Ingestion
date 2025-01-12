@@ -34,11 +34,11 @@ The status of Job will trigger a notification, a failed or a success Job.
 
 For the Dimension Table, consisting of Aiport Codes:
 
-[Airport Codes Data](airports.csv)
+[Airport Codes Data](Data/airports.csv)
 
 Daily sample data that gets ingested to S3 and transformed.
 
-[Daily Data Sample](flights.csv)
+[Daily Data Sample](Data/flights.csv)
 
 ### Script to run Glue Job and Transform:
 
