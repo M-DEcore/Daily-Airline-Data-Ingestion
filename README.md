@@ -5,7 +5,7 @@ As soon as the file lands in S3, we need to start the process.
 
 A dimension table of Airport Codes (one-time) is loaded in the Redshift
 
-Tech Stack:
+## Tech Stack:
 
 1. S3
 2. S3 Cloudtrail Notification
@@ -16,6 +16,11 @@ Tech Stack:
 7. Redshift Warehouse
 8. Step Function for Orchestration
 
+## Architecture
+
+![Architecture](Archticture.png)
+
+## Description:
 
 A daily file is uploaded to S3, based on partition. Event bridge will capture the pattern and trigger the step function, which orchestrates the process. The Redshift will already have the Dimension  table.
 
