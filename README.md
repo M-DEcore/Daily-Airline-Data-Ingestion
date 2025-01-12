@@ -29,3 +29,17 @@ When the data arrives in S3, a glue crawler is triggered. wait for the cralwer t
 Glue Job will have Job bookmarking enabled to read new 
 
 The status of Job will trigger a notification, a failed or a success Job. 
+
+### Data Used:
+
+For the Dimension Table, consisting of Aiport Codes:
+
+[Airport Codes Data](airports.csv)
+
+Daily sample data that gets ingested to S3 and transformed.
+
+[Daily Data Sample](flights.csv)
+
+### Script to run Glue Job and Transform:
+
+[GlueJob](glue_job.py)
